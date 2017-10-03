@@ -1,12 +1,12 @@
 <template>
-  <section id="attribute-and-class-binding">
-    <h1>Attribute and Class Binding</h1>
+  <section id="attribute-and-class-binding" class="content">
+    <h1 class="title">Attribute and Class Binding</h1>
 
-    <button :title="title">Hover over me</button>
+    <button class="button is-primary" :title="title">Hover over me</button>
 
-    <h3 :class="className">Title with dynamically assigned color</h3>
+    <h3 class="subtitle is-5" :class="className">Title with dynamically assigned color</h3>
 
-    <button @click="toggleButton" :class="{ 'is-blue-background': isBlueBackground }">Click to Toggle Background Color</button>
+    <button class="button" @click="toggleButton" :class="{ 'is-blue-background': isBlueBackground }">Click to Toggle Background Color</button>
   </section>
 </template>
 
@@ -28,16 +28,6 @@ export default {
 
 <style lang="scss" scoped>
 #attribute-and-class-binding {
-  button {
-    padding: 5px;
-    border: 1px solid rgba(42, 42, 42, 0.9);
-    border-radius: 5px;
-    background-color: #ddd;
-  }
-  ul li {
-    text-align: left;
-  }
-
   .color-red {
     color: red;
   }

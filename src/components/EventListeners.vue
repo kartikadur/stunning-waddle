@@ -1,13 +1,20 @@
 <template>
-  <section id="event-listeners">
-    <h1>Lists</h1>
+  <section id="event-listeners" class="content">
+    <h1 class="title">Event Listeners</h1>
 
-    <input type="text" id="input" v-model="newName">
-    <button id="button" @click="addName">Add Name</button>
-
-    <ul>
-      <li v-for="(name, i) in names" :key="i">{{ name }}</li>
-    </ul>
+    <div class="field has-addons">
+      <div class="control">
+        <input type="text" id="input" class="input" v-model="newName">
+      </div>
+      <div class="control">
+        <button id="button" class="button is-primary" @click="addName">Add Name</button>
+      </div>
+    </div>
+    <section class="section">
+      <ul>
+        <li v-for="(name, i) in names" :key="i">{{ name }}</li>
+      </ul>
+    </section>
   </section>
 </template>
 

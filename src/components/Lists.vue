@@ -1,14 +1,20 @@
 <template>
-  <section id="lists">
-    <h1>Lists</h1>
+  <section id="lists" class="content">
+    <h1 title>Lists</h1>
 
-    <input type="text" id="input">
-    <button id="button">Add Name</button>
-
-    <ul>
-      <li v-for="(name, i) in names" :key="i">{{ name }}</li>
-    </ul>
-
+    <div class="field has-addons">
+      <div class="control">
+        <input type="text" id="input" class="input">
+      </div>
+      <div class="control">
+        <button id="button" class="button is-primary">Add Name</button>
+      </div>
+    </div>
+    <section class="section">
+      <ul>
+        <li v-for="(name, i) in names" :key="i">{{ name }}</li>
+      </ul>
+    </section>
   </section>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
-  <section id="basic-data-binding">
-    <h1>Basic Data Binding</h1>
-    <input type="text" id="input" v-model="message">
-    <p>The value of the input is: {{ message }}</p>
+  <section id="basic-data-binding" class="content">
+    <h1 class="title">Basic Data Binding</h1>
+    <input type="text" id="input" class="input" v-model="message">
+    <p class="subtitle is-5">Input: {{ message }}</p>
   </section>
 </template>
 
