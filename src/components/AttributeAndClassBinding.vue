@@ -34,6 +34,7 @@ export default {
 
   .is-blue-background {
     background-color: #3FB8AF;
+    color: white;
   }
 }
 </style>

@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 // Import Components
+import Main from '@/components/Main';
 import * as components from '@/components';
 
 Vue.use(Router);
@@ -33,6 +34,11 @@ export const routes = [
   //   name: 'TaskList',
   //   component: components.TaskList,
   // },
+  {
+    path: '/',
+    name: 'main',
+    component: Main,
+  },
 ];
 
 /* eslint-disable no-console */
@@ -41,7 +47,7 @@ Object.keys(components).forEach((key) => {
   const name = components[key].name;
   const navLink = {
     component: components[key],
-    path: `/${components[key].name}`,
+    path: `/${name}`,
     name,
   };
   routes.push(navLink);

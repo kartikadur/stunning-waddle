@@ -42,12 +42,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#tabs-component {
-  .tabs {
-    li+li {
-      margin: 0;
-    }
-  }
-}
+// #tabs-component {
+//   .tabs {
+//     li+li {
+//       margin: 0;
+//     }
+//   }
+// }
 </style>
 
